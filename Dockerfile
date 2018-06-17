@@ -1,4 +1,5 @@
 FROM resin/rpi-raspbian:wheezy
+LABEL description="This image can be used to run prometheus on ARM v6 chips, e.g. Raspberry Pi Zero"
 WORKDIR /tmp
 ADD https://github.com/prometheus/prometheus/releases/download/v2.3.0/prometheus-2.3.0.linux-armv6.tar.gz .
 WORKDIR /
